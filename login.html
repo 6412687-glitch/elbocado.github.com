@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión | El Bocado</title>
+  <meta name="description" content="Accede a tu cuenta de El Bocado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">El Bocado</a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login active" aria-current="page">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="principal-centrado">
+    <section class="caja-login">
+      <h1>Iniciar sesión</h1>
+      <p>Entra para ver tus reservaciones.</p>
+      <form class="formulario" action="#" method="post">
+        <div class="campo">
+          <label for="correo-login">Correo electrónico</label>
+          <input type="email" id="correo-login" name="correo" placeholder="nombre@correo.com" autocomplete="email" required>
+        </div>
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres" minlength="8" autocomplete="current-password" required>
+        </div>
+        <div class="campo-check">
+          <input type="checkbox" id="recordar" name="recordar">
+          <label for="recordar">Mantener sesión iniciada</label>
+        </div>
+        <button type="submit" class="btn btn--completo">Entrar</button>
+      </form>
+      <p class="caja-login__pie"><a href="#">Olvidé mi contraseña</a> &nbsp;|&nbsp; <a href="#">Crear cuenta</a></p>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <section>
+        <h2 class="pie__titulo">El Bocado</h2>
+        <p>Cocina salvadoreña de todos los días. Colonia Escalón, San Salvador.</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Horario</h2>
+        <p>Martes a viernes: 11:00 a 21:00<br>Sábado y domingo: 9:00 a 22:00<br>Lunes: cerrado</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Contacto</h2>
+        <p>Tel. 2555-0142<br><a href="mailto:hola@elbocado.example">ELBOCADO12T@gmail.com</a></p>
+      </section>
+    </div>
+    <p class="pie__copy">© 2026 Restaurante El Bocado. Proyecto académico, negocio ficticio.</p>
+  </footer>
+</body>
+</html>

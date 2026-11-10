@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones | El Bocado</title>
+  <meta name="description" content="Reserva una mesa en El Bocado indicando personas, fecha, hora y zona.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">El Bocado</a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="reservaciones.html" class="active" aria-current="page">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="encabezado-pagina">
+      <div class="contenedor">
+        <h1>Reservar una mesa</h1>
+        <p>Llena el formulario y te confirmamos por teléfono o correo.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor dos-col dos-col--formulario">
+        <article>
+          <form class="formulario" action="#" method="post">
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required>
+            </div>
+            <div class="campo-doble">
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="7000-0000" pattern="[0-9]{4}-?[0-9]{4}" required>
+              </div>
+            </div>
+            <div class="campo-doble">
+              <div class="campo">
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" value="2" required>
+              </div>
+              <div class="campo">
+                <label for="zona">Zona del restaurante</label>
+                <select id="zona" name="zona" required>
+                  <option value="">Selecciona una zona</option>
+                  <option value="terraza">Terraza</option>
+                  <option value="salon">Salón principal</option>
+                  <option value="privada">Área privada</option>
+                </select>
+              </div>
+            </div>
+            <div class="campo-doble">
+              <div class="campo">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+              </div>
+              <div class="campo">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" name="hora" min="09:00" max="21:00" required>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="notas">Notas (opcional)</label>
+              <textarea id="notas" name="notas" rows="4" placeholder="Cumpleaños, alergias, silla para niños..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--completo">Enviar reservación</button>
+          </form>
+        </article>
+
+        <aside class="lateral">
+          <img src="img/reservas.jpg" alt="Mesas de la terraza de El Bocado" loading="lazy" width="800" height="600">
+          <h2>Antes de reservar</h2>
+          <p>Mantenemos la mesa 15 minutos después de la hora acordada.</p>
+          <p>Para grupos de más de 10 personas, llámanos al 2555-0142.</p>
+          <p>Horario: martes a viernes de 11:00 a 21:00, sábado y domingo de 9:00 a 22:00.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <section>
+        <h2 class="pie__titulo">El Bocado</h2>
+        <p>Cocina salvadoreña de todos los días. Colonia Escalón, San Salvador.</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Horario</h2>
+        <p>Martes a viernes: 11:00 a 21:00<br>Sábado y domingo: 9:00 a 22:00<br>Lunes: cerrado</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Contacto</h2>
+        <p>Tel. 2555-0142<br><a href="mailto:hola@elbocado.example">ELBOCADO12T@gmail.com</a></p>
+      </section>
+    </div>
+    <p class="pie__copy">© 2026 Restaurante El Bocado. Proyecto académico, negocio ficticio.</p>
+  </footer>
+</body>
+</html>

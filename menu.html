@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú | El Bocado</title>
+  <meta name="description" content="Carta de El Bocado: entradas, platos fuertes y bebidas con precios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">El Bocado</a>
+      <nav aria-label="Navegación principal">
+        <ul class="menu-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="active" aria-current="page">Menú</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html" class="nav-login">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="encabezado-pagina">
+      <div class="contenedor">
+        <h1>Menú</h1>
+        <p>Precios en dólares, con impuestos incluidos.</p>
+        <nav class="subnav" aria-label="Categorías del menú">
+          <a href="#entradas">Entradas</a>
+          <a href="#fuertes">Platos fuertes</a>
+          <a href="#bebidas">Bebidas</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="seccion" id="entradas">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Entradas</h2>
+        <div class="rejilla rejilla--3">
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/yuca-frita.jpg" alt="Yuca frita con chicharrón y curtido" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Yuca frita con chicharrón</h3>
+              <p>Yuca dorada con trozos de chicharrón, curtido y salsa.</p>
+              <p class="precio">$4.50</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><span class="etiqueta">Más pedido</span><img src="img/pupusas.jpg" alt="Pupusas de queso con loroco" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Pupusas de queso con loroco</h3>
+              <p>Dos pupusas hechas en comal, con curtido y salsa de tomate.</p>
+              <p class="precio">$3.00</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/empanadas.jpg" alt="Empanadas de plátano rellenas de leche" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Empanadas de plátano</h3>
+              <p>Plátano maduro frito relleno de crema de leche y azúcar.</p>
+              <p class="precio">$3.50</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--gris" id="fuertes">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Platos fuertes</h2>
+        <div class="rejilla rejilla--3">
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/sopa-gallina.jpg" alt="Sopa de gallina india" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Sopa de gallina india</h3>
+              <p>Caldo de gallina con verdura, arroz y tortillas.</p>
+              <p class="precio">$8.50</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><span class="etiqueta">Del día</span><img src="img/lomito.jpg" alt="Lomito a la parrilla con arroz y frijoles" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Lomito a la parrilla</h3>
+              <p>Corte de res con arroz, frijoles, ensalada y tortilla.</p>
+              <p class="precio">$11.00</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/pescado.jpg" alt="Pescado frito con tajadas y ensalada" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Pescado frito</h3>
+              <p>Pescado entero con tajadas de plátano, ensalada y limón.</p>
+              <p class="precio">$10.50</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="bebidas">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Bebidas</h2>
+        <div class="rejilla rejilla--3">
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/horchata.jpg" alt="Vaso de horchata de morro" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Horchata de morro</h3>
+              <p>Bebida fría con canela. Vaso de 16 oz.</p>
+              <p class="precio">$2.50</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/ensalada.jpg" alt="Ensalada salvadoreña de frutas" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Ensalada</h3>
+              <p>Refresco de frutas picadas con jugo de piña y marañón.</p>
+              <p class="precio">$2.75</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <figure class="tarjeta__foto"><img src="img/cafe.jpg" alt="Taza de café de altura" loading="lazy" width="800" height="600"></figure>
+            <div class="tarjeta__cuerpo">
+              <h3>Café de altura</h3>
+              <p>Café de Apaneca, servido caliente.</p>
+              <p class="precio">$2.00</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="franja">
+      <div class="contenedor franja__interior">
+        <p>Si tienes alergias o una dieta especial, avísanos al hacer tu reservación.</p>
+        <a class="btn btn--blanco" href="reservaciones.html">Reservar mesa</a>
+      </div>
+    </aside>
+  </main>
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <section>
+        <h2 class="pie__titulo">El Bocado</h2>
+        <p>Cocina salvadoreña de todos los días. Colonia Escalón, San Salvador.</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Horario</h2>
+        <p>Martes a viernes: 11:00 a 21:00<br>Sábado y domingo: 9:00 a 22:00<br>Lunes: cerrado</p>
+      </section>
+      <section>
+        <h2 class="pie__titulo">Contacto</h2>
+        <p>Tel. 2555-0142<br><a href="mailto:hola@elbocado.example">ELBOCADO12T@gmail.com</a></p>
+      </section>
+    </div>
+    <p class="pie__copy">© 2026 Restaurante El Bocado. Proyecto académico, negocio ficticio.</p>
+  </footer>
+</body>
+</html>
